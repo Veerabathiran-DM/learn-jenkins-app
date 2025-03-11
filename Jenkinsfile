@@ -16,8 +16,8 @@ pipeline {
                     npm --version
                     npm install --package-lock-only
                     npm fund
-                    npm audit fix
                     chown -R 992:992 "/.npm"
+                    npm audit fix
                     npm install react-scripts --save
                     npm run build
                     ls -la
