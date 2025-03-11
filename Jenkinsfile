@@ -15,6 +15,7 @@ pipeline {
                     node --version
                     npm --version
                     npm install --package-lock-only
+                    sudo chown -R 992:992 "/.npm"
                     npm install react-scripts --save
                     npm run build
                     ls -la
